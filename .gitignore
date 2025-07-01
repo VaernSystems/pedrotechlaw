@@ -43,3 +43,4 @@ blog-backend
 mepasoft
 .vscode.env
 .env
+.env.local
