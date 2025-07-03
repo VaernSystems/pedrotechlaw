@@ -4,7 +4,7 @@ date: '2025-06-17'
 tags: ['python', 'streamlit', 'visualizacao-de-dados', 'pydeck', 'gps']
 draft: false
 summary: 'Neste post, compartilho como transformei 10 meses de dados pessoais de GPS em uma visualização interativa em 3D usando Python, Pandas, Streamlit e Pydeck. Uma forma bonita de enxergar a vida em movimento.'
-images: ['/static/images/geolocation.png']
+images: ['/static/images/data.png']
 ---
 
 # Dados, Código e Vida em Movimento
@@ -26,6 +26,7 @@ Depois, com **Streamlit** e **Pydeck**, criei uma visualização interativa em 3
 - 🗺️ **10 meses de dados de GPS em arquivos CSV**  
 - 🐍 Processamento e limpeza dos dados com **Pandas** no **Python**
 - 📈 Visualização interativa utilizando **Streamlit** com **Pydeck** (Deck.GL)  
+- 🔥 Por meio do meu script, fora criardo uma espécie de heatmap, para cada lugar que passei mais tempo segundo o GPS.
 - 🚀 Construção de um mapa onde cada ponto se transforma em uma coluna 3D — uma espécie de "torre" — que mostra  deslocamentos e padrões no espaço  
 - 🌐 Transformei isso em um **app online**, funcionando e acessível  
 
@@ -55,6 +56,7 @@ A vida é para viver no agora. Na linha do código. No passo que damos agora. E 
 - Streamlit  
 - Pydeck (Deck.GL)  
 - Dados CSV exportados de dispositivos de atividade física  
+- (Uma boa dose de matemática para consertar a falta de virgula em milhares de linhas de longitude e latitude que o garmin não utilizou)
 
 ## 📜 Reflexão
 
