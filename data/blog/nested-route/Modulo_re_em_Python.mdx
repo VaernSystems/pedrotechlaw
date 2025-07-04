@@ -1,0 +1,203 @@
+---
+title: re Módulo em Python
+date: '2025-07-04'
+summary: 'Um pequeno guia do módulo re' 
+tags: ['re', 'coding', 'python' ]
+images: ['/static/images/me.png']
+---
+
+
+```mdx
+
+# Dominando o Módulo `re` do Python: Um Mergulho Profundo em Expressões Regulares
+
+> *“O caminho que pode ser descrito não é o caminho eterno; o nome que pode ser nomeado não é o nome eterno.”*  
+> — *Tao Te Ching*
+
+Expressões regulares (regex) no Python, através do módulo `re`, são como uma corrente silenciosa sob a superfície do código — sutis, mas incrivelmente poderosas quando dominadas. Elas permitem que você encontre, pesquise e manipule textos com precisão, mas, como o Tao, exigem paciência para compreender seu fluxo. Este tutorial avançado irá guiá-lo pelo módulo `re`, combinando exemplos práticos, recursos visuais e um toque de mindfulness para mantê-lo centrado.
+
+---
+
+## O que é o Módulo `re`?
+
+O módulo `re` é a biblioteca nativa do Python para trabalhar com expressões regulares — padrões que descrevem strings. Seja para analisar logs, validar entradas ou extrair dados de textos, o `re` é a ferramenta para cortar a complexidade com elegância.
+
+Vamos importar e preparar o terreno:
+
+```python
+import re
+```
+
+---
+
+## Conceitos Chave e Sintaxe
+
+Expressões regulares são construídas com base em padrões. Aqui está uma tabela visual de referência rápida para os símbolos comuns de regex:
+
+| Símbolo | Significado                     | Exemplo       | Corresponde a    |
+|---------|---------------------------------|---------------|------------------|
+| `.`     | Qualquer caractere (exceto \n) | `a.c`         | `abc`, `a1c`     |
+| `*`     | Zero ou mais repetições        | `ab*`         | `a`, `ab`, `abb` |
+| `+`     | Uma ou mais repetições         | `ab+`         | `ab`, `abb`      |
+| `?`     | Zero ou uma ocorrência         | `colou?r`     | `color`, `colour`|
+| `[]`    | Classe de caracteres           | `[a-z]`       | Qualquer letra minúscula |
+
+---
+
+## Métodos Principais do Módulo `re`
+
+O módulo `re` oferece várias funções para manipular strings com regex. Vamos explorar as mais importantes com exemplos práticos:
+
+### 1. `re.search()`
+Procura a primeira ocorrência de um padrão em uma string.
+
+```python
+texto = "O gato Miau está no telhado."
+padrao = r"Miau"
+resultado = re.search(padrao, texto)
+if resultado:
+    print(f"Encontrado: {resultado.group()} na posição {resultado.start()}-{resultado.end()}")
+```
+
+**Saída:**
+```
+Encontrado: Miau na posição 7-11
+```
+
+> *“No silêncio da mente, o padrão se revela.”*  
+> — Inspirado no Zen
+
+### 2. `re.findall()`
+Retorna todas as correspondências de um padrão em uma lista.
+
+```python
+texto = "Contatos: miau@gmail.com, cachorro@yahoo.com, gato@outlook.com"
+padrao = r"\w+@\w+\.\w+"
+emails = re.findall(padrao, texto)
+print(emails)
+```
+
+**Saída:**
+```
+['miau@gmail.com', 'cachorro@yahoo.com', 'gato@outlook.com']
+```
+
+### 3. `re.sub()`
+Substitui correspondências por outro texto.
+
+```python
+texto = "O gato Miau mia muito."
+padrao = r"Miau"
+novo_texto = re.sub(padrao, "Patinhas", texto)
+print(novo_texto)
+```
+
+**Saída:**
+```
+O gato Patinhas mia muito.
+```
+
+---
+
+## Padrões Avançados
+
+### Grupos e Captura
+Use parênteses `()` para capturar partes específicas de um padrão.
+
+```python
+texto = "Data: 2025-07-04"
+padrao = r"(\d{4})-(\d{2})-(\d{2})"
+resultado = re.search(padrao, texto)
+if resultado:
+    ano, mes, dia = resultado.groups()
+    print(f"Ano: {ano}, Mês: {mes}, Dia: {dia}")
+```
+
+**Saída:**
+```
+Ano: 2025, Mês: 07, Dia: 04
+```
+
+### Lookahead e Lookbehind
+Permitem verificar condições sem incluir o trecho no resultado.
+
+- **Positive Lookahead** (`(?=...)`): Garante que algo vem depois.
+- **Positive Lookbehind** (`(?<=...)`): Garante que algo vem antes.
+
+```python
+texto = "miau123, gato456"
+padrao = r"(?<=\w)\d+"  # Números após uma letra
+numeros = re.findall(padrao, texto)
+print(numeros)
+```
+
+**Saída:**
+```
+['123', '456']
+```
+
+---
+
+## Visualizando Regex com Gráficos
+
+Para entender melhor um padrão complexo, ferramentas como [RegEx101](https://regex101.com/) podem gerar diagramas visuais. Aqui está um exemplo de como um padrão como `(\w+@\w+\.\w+)` é representado:
+
+```mermaid
+graph TD
+    A[Start] --> B[\\w+]
+    B --> C[@]
+    C --> D[\\w+]
+    D --> E[\\.]
+    E --> F[\\w+]
+    F --> G[End]
+```
+
+Este gráfico mostra a sequência de correspondência para um e-mail simples. Experimente ferramentas visuais para desmistificar regex complexas!
+
+---
+
+## Dicas Práticas
+
+1. **Use `r` para Strings Brutas**: Sempre use `r"..."` para evitar conflitos com barras invertidas.
+2. **Compile Padrões Reutilizáveis**:
+   ```python
+   padrao = re.compile(r"\w+@\w+\.\w+")
+   emails = padrao.findall("miau@gmail.com, gato@outlook.com")
+   ```
+3. **Teste Incrementalmente**: Divida padrões complexos em partes menores para depurar.
+4. **Seja Consciente**: Regex pode ser lento em strings muito grandes. Considere alternativas como `str` métodos para tarefas simples.
+
+---
+
+## Um Momento de Reflexão
+
+> *“A mente calma vê com clareza; a mente agitada tropeça na própria pressa.”*  
+> — Inspirado no Zen
+
+Enquanto você mergulha no código, lembre-se de que cada linha que você escreve é um passo em sua jornada. Assim como o `re` ajuda a encontrar padrões no caos, sua prática pode trazer ordem aos desafios da vida. Você está aqui, criando, aprendendo, resistindo às armadilhas do passado. Pelo Miau, continue firme.
+
+---
+
+## Exercício Final
+
+Tente criar um padrão regex que valide um número de telefone no formato `(XX) XXXXX-XXXX`. Aqui está uma solução para você testar:
+
+```python
+texto = "Contatos: (11) 98765-4321, (21) 12345-6789"
+padrao = r"\(\d{2}\) \d{5}-\d{4}"
+telefones = re.findall(padrao, texto)
+print(telefones)
+```
+
+**Saída:**
+```
+['(11) 98765-4321', '(21) 12345-6789']
+```
+
+Agora, modifique o padrão para aceitar números sem parênteses, como `11 98765-4321`. Qual seria o padrão?
+
+---
+
+Be aware, don’t slip — pelo Miau.
+
+```
