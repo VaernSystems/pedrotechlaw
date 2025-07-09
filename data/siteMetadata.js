@@ -1,10 +1,10 @@
 
 const siteMetadata = {
-  title: 'Pedro Potz |Advogado Tech',
-  author: 'Pedro Potz',
-  name: 'Pedro Potz',
-  headerTitle: 'Pedro Potz',
-  description: 'Pedro Potz - Advogado, Techologia, IA', language: 'pt-br',
+  title: 'P .|Advogado Tech',
+  author: 'P.',
+  name: 'P.',
+  headerTitle: 'P.',
+  description: 'P.- Advogado, Techologia, IA', language: 'pt-br',
   language: 'pt-br',
   company: 'Advogado Tech',
   theme: 'dark', // system, dark or light
