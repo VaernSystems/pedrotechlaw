@@ -26,7 +26,7 @@ export default function ContributionActivity() {
       <CardContent>
         <div className="flex justify-center items-center"> {/* Centraliza a imagem dentro do card */}
           <Image
-            src="public/imgs/github-chart.svg" // O caminho para sua imagem
+            src="/static/images/github-chart.svg" // O caminho para sua imagem
             alt="Gráfico de Contribuições do GitHub"
             width={663} // Defina a largura da imagem. Ajuste conforme a imagem gerada.
             height={104} // Defina a altura da imagem. Ajuste conforme a imagem gerada.
