@@ -28,8 +28,8 @@ export default function ContributionActivity() {
           <Image
             src="public/imgs/github-chart.svg" // O caminho para sua imagem
             alt="Gráfico de Contribuições do GitHub"
-            width={720} // Defina a largura da imagem. Ajuste conforme a imagem gerada.
-            height={110} // Defina a altura da imagem. Ajuste conforme a imagem gerada.
+            width={663} // Defina a largura da imagem. Ajuste conforme a imagem gerada.
+            height={104} // Defina a altura da imagem. Ajuste conforme a imagem gerada.
             // layout="responsive" // Use "responsive" ou "fill" com um container pai para maior flexibilidade
             // objectFit="contain" // bom para manter a proporção sem cortar
             // className={styles.chartImage} // Se você usar um módulo CSS
