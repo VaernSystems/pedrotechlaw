@@ -3,8 +3,8 @@ const siteMetadata = {
   title: 'Pythonic Lawyer .|Advogado Tech',
   author: 'Pedro Ptz.',
   name: 'Pedro Ptz.',
-  headerTitle: 'P.',
-  description: 'Pedro Ptz.- A Pythonic Lawyer,', language: 'pt-br',
+  headerTitle: 'Pythonic Lawyer.',
+  description: 'Pedro Ptz.-', language: 'pt-br',
   language: 'pt-br',
   company: 'Pythonic Lawyer',
   theme: 'dark', // system, dark or light
