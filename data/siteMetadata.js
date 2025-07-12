@@ -1,12 +1,12 @@
 
 const siteMetadata = {
-  title: 'P .|Advogado Tech',
-  author: 'P.',
-  name: 'P.',
+  title: 'Pythonic Lawyer .|Advogado Tech',
+  author: 'Pedro Ptz.',
+  name: 'Pedro Ptz.',
   headerTitle: 'P.',
-  description: 'P.- Advogado, Techologia, IA', language: 'pt-br',
+  description: 'Pedro Ptz.- A Pythonic Lawyer,', language: 'pt-br',
   language: 'pt-br',
-  company: 'Advogado Tech',
+  company: 'Pythonic Lawyer',
   theme: 'dark', // system, dark or light
   avatar: 'https://avatars.githubusercontent.com/u/205710427?v=4',
   siteUrl: 'https://pedrop.vercel.app/',

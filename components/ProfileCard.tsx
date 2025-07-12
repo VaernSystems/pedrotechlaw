@@ -22,7 +22,7 @@ const ProfileCard = () => {
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold">Pedro Potz, Dev.Lawyer</h2>
+              <h2 className="text-2xl font-bold">Pedro Ptz, A Pythonic Lawyer</h2>
               <p className="text-zinc-600 dark:text-zinc-300">
                Advogado Based in Brasil - Atuando globalmente. 
               </p>
