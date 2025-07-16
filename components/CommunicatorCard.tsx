@@ -6,7 +6,7 @@ const MotionBlock = dynamic(() => import("./motions/Block"));
 
 export default function CommunicatorCard() {
   return (
-    <MotionBlock variants={fadeInRight} className="p-8 bg-yellow-400 dark:bg-blue-900 rounded-xl text-black dark:text-white shadow-lg">
+    <MotionBlock variants={fadeInRight} className="p-8 bg-yellow-400 dark:bg-blue-800 rounded-xl text-black dark:text-white shadow-lg">
       <h2 className="text-3xl font-bold mb-6"> Modo Zen</h2>
       {/* <p className="mb-4">
         I talk <span className="font-bold">tech</span> with devs, and{" "}
