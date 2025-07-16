@@ -9,10 +9,10 @@ const MotionBlock = dynamic(() => import("./motions/Block"));
 const ProfileCard = () => {
   return (
     <MotionBlock variants={fadeInLeft} >
-      <Card className="shadow-lg border-0 bg-white/80 dark:bg-slate-700 backdrop-blur-sm">
+      <Card className="shadow-lg border-0 bg-white/80 dark:bg-slate-900 backdrop-blur-sm">
         <CardContent className="p-6">
           <div className="flex items-center space-x-4">
-            <div className="w-16 h-16 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-700">
+            <div className="w-16 h-16 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-900">
               <Image
                 src="/avatar.webp"
                 alt={siteMetadata.title}
@@ -22,17 +22,17 @@ const ProfileCard = () => {
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold">Pedro Ptz, A Pythonic Lawyer</h2>
+              <h2 className="text-2xl font-bold">Pedro Potz </h2>
               <p className="text-zinc-600 dark:text-zinc-300">
                Advogado Based in Brasil - Atuando globalmente. 
               </p>
             </div>
           </div>
           <p className="mt-4 text-lg">
-            Código sem presença é só repetição - conciência é o verdadeiro sistema operacional.
+            Mindful Coding; Mindful Living.
           </p>
           <p className="mt-2 text-zinc-600 dark:text-zinc-300">
-            Tenho atuado na interseção entre Direito e Tecnologia, desenvolvendo soluções práticas com IA e automações para advogados, concursandos e estudantes em busca de produtividade real e independência digital.
+            Tenho atuado na interseção entre Direito e Tecnologia, desenvolvendo soluções práticas com IA e automações para advogados e estudantes em busca de produtividade real .
           </p>
         </CardContent>
       </Card>

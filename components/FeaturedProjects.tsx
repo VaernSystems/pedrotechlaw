@@ -25,7 +25,7 @@ export default function FeaturedProjects() {
         },
       }}
     >
-      <Card className="bg-white dark:bg-slate-700  border-0">
+      <Card className="bg-white dark:bg-slate-900  border-0">
         <div className="flex items-center justify-between pr-6">
           <CardHeader>
             <CardTitle>Featured Projects</CardTitle>

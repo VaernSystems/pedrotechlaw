@@ -15,7 +15,7 @@ export default function ContributionActivity() {
     // Se usar, certifique-se de importar MotionBlock e as variants (fadeInLeft, etc.)
     // Vamos manter o Card para manter a estrutura visual.
     <Card className={cn(
-      "shadow-lg border-0 bg-white dark:bg-slate-700",
+      "shadow-lg border-0 bg-white dark:bg-slate-900",
       "p-4 flex flex-col items-center justify-center" // Adicione estilos para centralizar
     )}>
       <CardHeader>

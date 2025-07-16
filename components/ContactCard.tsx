@@ -18,7 +18,7 @@ const ContactCard = () => {
         },
       }
     }} >
-      <Card className="shadow-lg border-0 bg-white/80 dark:bg-slate-700 backdrop-blur-sm">
+      <Card className="shadow-lg border-0 bg-white/80 dark:bg-slate-900 backdrop-blur-sm">
         <CardHeader>
           <CardTitle>Find me on</CardTitle>
         </CardHeader>

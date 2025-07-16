@@ -25,7 +25,7 @@ export default function ExpertiseSection({ title, items = ["HEALTHTECH", "E-COMM
         },
       }
     }} >
-      <Card className="shadow-lg border-0 bg-white dark:bg-slate-700 pt-4">
+      <Card className="shadow-lg border-0 bg-white dark:bg-slate-900 pt-4">
         <CardContent>
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="space-y-3 sm:w-4/12">
