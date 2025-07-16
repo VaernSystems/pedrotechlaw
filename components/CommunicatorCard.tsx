@@ -19,10 +19,10 @@ export default function CommunicatorCard() {
     <span className="italic">Lao Tzu:</span>{" "}
   Be content with what you have; rejoice in the way things are. When you realize
   there is nothing lacking, the whole world belongs to you. 
-  <a href="https://taote.vercel.app"
-    O Caminho
-   </a>
+  <a 
+  href="https://taote.vercel.app" O Caminho 
+    </a>
   </p>
-</MotionBlock>
+          </MotionBlock>
   );
 }
