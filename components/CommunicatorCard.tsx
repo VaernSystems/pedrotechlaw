@@ -23,6 +23,6 @@ export default function CommunicatorCard() {
     O Caminho
    </a>
   </p>
-               </MotionBlock>
+</MotionBlock>
   );
 }
