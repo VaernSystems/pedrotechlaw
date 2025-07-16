@@ -25,7 +25,7 @@ export default function CommunicatorCard() {
      href="https://taote.vercel.app" 
      target="_blank" 
      rel="noopener noreferrer" 
-     className="text-blue-500 hover:underline"
+     className="text-blue-400 hover:underline"
    >
      O Caminho
    </a>
