@@ -15,20 +15,19 @@ export default function CommunicatorCard() {
       {/* <p className="mb-4">
         Ensino tecnologia com clareza, sem jargões. Atendo estudantes, advogados e concurseiros em busca de soluções reais. Atuo remotamente a partir do Brasil, com flexibilidade para atender diferentes ritmos e rotinas.
       </p> */}
-   <p className="mb-4">
-    <span className="italic">Lao Tzu:</span>{" "}
-    "Be content with what you have; rejoice in the way things are. When you realize
-    there is nothing lacking, the whole world belongs to you."
-    {/* Link corrigido abaixo */}
-    {" "}
-   <a 
-     href="https://taote.vercel.app" 
-     target="_blank" 
-     rel="noopener noreferrer" 
-     className="text-blue-400 hover:underline"
-   >
-     O Caminho
-   </a>
+         <p className="mb-4">
+             <span className="italic">Lao Tzu:</span>{" "}
+              "Be content with what you have; rejoice in the way things are. When you realize
+               there is nothing lacking, the whole world belongs to you."
+   
+    
+           <a href="https://taote.vercel.app" o caminho
+           target="_blank" 
+          rel="noopener noreferrer" 
+           className="text-blue-400 hover:underline"
+           >
+        
+     </a>
  </p>
              </MotionBlock>
 );
