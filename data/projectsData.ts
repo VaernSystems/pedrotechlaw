@@ -7,15 +7,29 @@ interface Project {
 }
 
 const projectsData: Project[] = [
+   {
+    title: "Data Science: Calculadoras de Débitos Judiciais Avançadas. Saia na frente",
+    description: `Transformando uma simples calculadora jurídica em uma máquina de informações`,
+    imgSrc: "/imgs/calcpost.png",
+    tags: ["python", "streamlit", "Data Science","Data View","direito","dataScience"],
+    href: "https://pedrocalc.streamlit.app",
+  },
+   {
+    title: "Esqueça seu Excel. Venha para o futuro com o DuckDb",
+    description: `Duck db, o poder que o Advogado precisa em suas planilhas`,
+    imgSrc: "/imgs/duck.png",
+    tags: ["python", "streamlit", "Data Science","Data View","Duck Db","direito"],
+    href: "https://pedroduck.streamlit.app",
+  },  
   {
-    title: "Interaja com 10 mese de corrida plotados no mapa. Dados de GPS como você nunca viu!",
+    title: "Data Science: GPS de corrida como você nunca viu. 10 Meses de Corridas em um heatmap incrível",
     description: `Acesse meu App onde ploto 10 meses de dados brutos de GPS em um único mapa. Pydeck + Streamlit`,
     imgSrc: "/imgs/geolocation.png",
     tags: ["python", "streamlit", "Data Science","Data View","geolocation","Garmin"],
     href: "https://runmapy.streamlit.app",
   },
   {
-    title: "Meu App: Sleep Data View ",
+    title: "Data vizualization: Meu sono em gráficos",
     description: `Meu app para vizualização de dados interativo de sono do Garmin feito em Python + Streamlit. Have Fun!`,
     imgSrc: "/imgs/miausleep.png",
     tags: ["python", "streamlit", "Data Science","Data View"],
