@@ -20,7 +20,7 @@ const HomePage = () => {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div className="space-y-6 lg:col-span-2">
         <ProfileCard />
-        <ExpertiseSection title="Industries & Skills" />
+        <ExpertiseSection title="HARVARD x Courses:" />
         <ContributionActivity />
         <Projects />
       </div>
