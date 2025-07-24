@@ -1,0 +1,92 @@
+---
+title: Visualização de Terremotos com Python e Plotly
+date: '2025-07-24'
+tags: ['Data Science', 'Python','GeoJson']
+summary:'Visualização de Terremotos com Python e Plotly'
+images: ['/static/images/newplot.png'] 
+---
+
+
+
+Visualização de Terremotos com Python e Plotly
+
+
+Este projeto utiliza Python, GeoJSON e Plotly para visualizar terremotos registrados nos últimos 7 dias (17 a 24 de julho de 2025) em um mapa interativo. Os dados são obtidos de um arquivo GeoJSON (`1.0_week.geojson`), processados para extrair magnitude, longitude e latitude, e visualizados com a biblioteca Plotly.
+
+## Objetivo
+
+Criar uma visualização geoespacial de terremotos, onde:
+
+- Cada ponto representa um terremoto.
+- O tamanho e a cor dos pontos indicam a magnitude.
+- As coordenadas (latitude e longitude) definem a localização.
+
+## Requisitos
+
+- Python 3.8+
+- Bibliotecas: `pathlib`, `json`, `plotly`
+- Arquivo de dados: `1.0_week.geojson` (exemplo: dados do USGS)
+
+## Estrutura do Projeto
+
+1. **Leitura e Conversão de Dados**: Carrega o arquivo GeoJSON e converte para um dicionário Python.
+2. **Tratamento de Dados**: Extrai magnitude, longitude e latitude em listas para visualização.
+3. **Visualização**: Gera um mapa interativo com Plotly.
+
+## Etapas de Tratamento de Dados
+
+### 1. Leitura do Arquivo GeoJSON
+
+O arquivo GeoJSON é lido e convertido em um dicionário Python:
+
+```python
+from pathlib import Path
+import json
+
+path = Path('1.0_week.geojson')
+contents = path.read_text()
+datanew = json.loads(contents)
+```
+
+- `Path` acessa o arquivo.
+- `read_text()` lê o conteúdo como string.
+- `json.loads()` converte para um dicionário.
+
+### 2. Extração de Dados
+
+Os dados de terremotos estão na chave `'features'` do dicionário. Magnitude, longitude e latitude são extraídos em listas:
+
+```python
+all_eq_dict = datanew['features']
+mags, lons, lats = [], [], []
+
+for eq_dict in all_eq_dict:
+    mag = eq_dict['properties']['mag']
+    lon = eq_dict['geometry']['coordinates'][0]
+    lat = eq_dict['geometry']['coordinates'][1]
+    mags.append(mag)
+    lons.append(lon)
+    lats.append(lat)
+```
+
+- Itera sobre cada terremoto (`eq_dict`).
+- Armazena magnitude (`mag`), longitude (`lon`) e latitude (`lat`) em listas separadas.
+
+### 3. Visualização
+
+As listas `mags`, `lons` e `lats` são usadas para criar um mapa interativo com Plotly, onde:
+
+- `size=mags`: Define o tamanho dos pontos pela magnitude.
+- `color=mags`: Define a cor pela magnitude (escala `Viridis`).
+- `projection='natural earth'`: Usa projeção geoespacial.
+
+
+## Resultado
+
+Um mapa interativo mostrando terremotos de 17 a 24 de julho de 2025, com pontos dimensionados e coloridos por magnitude.
+
+## Próximos Passos
+
+- Adicionar filtros para magnitudes específicas.
+- Integrar com Streamlit para um dashboard interativo.
+- Validar dados para tratar outliers (ex.: magnitudes negativas).
