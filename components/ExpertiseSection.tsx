@@ -33,7 +33,7 @@ export default function ExpertiseSection({ title, items = ["Python", "AI with Py
               {items.map((item) => (
                 <div key={item} className="flex items-center space-x-2">
                   <Check className="w-5 h-5 text-green-500 dark:text-green-400" />
-                  <span className="font-mono text-sm">{item}</span>
+                  <span className="font-mono text-sm">{item} </span>
                 </div>
               ))}
             </div>

@@ -33,7 +33,7 @@ export default function CommunicatorCard2() {
       alt="Calculadora Jurídica"
       className="w-16 h-16 rounded-md"
     />
-    <span className="text-xl font-semibold">Calculdora Jurídica com Data Science</span>
+    <span className="text-xl font-semibold">Calculdora Jurídica com Data Science.</span>
   </a>
                </MotionBlock>
   );
