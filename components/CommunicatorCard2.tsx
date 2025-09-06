@@ -29,7 +29,7 @@ export default function CommunicatorCard2() {
     className="inline-flex items-center gap-4 border border-gray-300 rounded-xl p-4 hover:shadow-lg transition"
   >
     <img
-      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.PxBuhT2oIuUO5I6Mx3HQ4AHaJh%3Fr%3D0%26pid%3DApi&f=1&ipt=4367c1a307f20a321bf9f330840cbb1084e80bb9af85f7ce0a941153dc7d352a&ipo=images" // ou qualquer imagem que você queir
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.PxBuhT2oIuUO5I6Mx3HQ4AHaJh%3Fr%3D0%26pid%3DApi&f=1&ipt=4367c1a307f20a321bf9f330840cbb1084e80bb9af85f7ce0a941153dc7d352a&ipo=images" // ou qualquer imagem que voê queir
       alt="Calculadora Jurídica"
       className="w-16 h-16 rounded-md"
     />
