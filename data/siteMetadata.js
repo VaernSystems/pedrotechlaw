@@ -1,8 +1,8 @@
 
 const siteMetadata = {
   title: 'Pythonic Lawyer .|Advogado Tech',
-  author: 'Pedro Medeiros.',
-  name: 'Pedro Medeiros.',
+  author: 'Pedro Potz',
+  name: 'Pedro Potz',
   headerTitle: 'Pythonic Lawyer.',
   description: 'Pedro Pythonic Lawyer.-', language: 'pt-br',
   language: 'pt-br',

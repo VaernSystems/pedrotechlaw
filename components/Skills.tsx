@@ -2,12 +2,10 @@ import { Badge } from "@/components/ui/badge";
 import { Carter_One } from "next/font/google";
 
 const skills = [
-  {category: "Atuação",items:["Advogado","Python coding","Web App","Legal Automation","Data Science","Teaching"]},
-  {category: "IA",items: ["Machine Learning", "Medical Diagnosis", "Proofreading", "Reinforcement Learning"],},
-  { category: "Backend", items: ["Python","Node.js", "Nest.js", "Flask"] },
-  { category: "Cloud", items: ["AWS", "Google Cloud", "Serverless"] },
-  { category: "Web App", items: ["Django", "React", "SQL", "Javascript", "APIs","FastAPI","Streamlit","Flask"] },
-  { category: "Advogado", items: ["Empresarial","Tecnológico","Processual","Tributário"]}
+  { category: "Direito", items: ["Empresarial", "Tecnologia", "Contratos", "Compliance"] },
+  { category: "Automação Legal", items: ["Python", "Legal Tech", "APIs", "Web Apps"] },
+  { category: "Desenvolvimento", items: ["Django", "Flask", "Streamlit", "React"] },
+  { category: "Data Science", items: ["Machine Learning", "SQL", "Análise de Dados"] }
 ];
 
 export function Skills() {

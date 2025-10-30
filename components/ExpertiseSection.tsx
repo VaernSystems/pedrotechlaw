@@ -13,7 +13,7 @@ interface ExpertiseProps {
   items?: string[];
 }
 
-export default function ExpertiseSection({ title, items = ["Python", "AI with Python", "Web Programming w/ Python", "DATA SCIENCE "] }: ExpertiseProps) {
+export default function ExpertiseSection({ title, items = ["CS50's Introduction to Programming with Python", "CS50's Web Programming with Python and JavaScript", "CS50's Introduction to Artificial Intelligence with Python"] }: ExpertiseProps) {
   return (
     <MotionBlock variants={{
       ...fadeInLeft, animate: {
