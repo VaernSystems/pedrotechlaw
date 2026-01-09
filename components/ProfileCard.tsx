@@ -14,7 +14,7 @@ const ProfileCard = () => {
           <div className="flex items-center space-x-4">
             <div className="w-16 h-16 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-900">
               <Image
-                src="/avatar.webp"
+                src="/avatar.jpg"
                 alt={siteMetadata.title}
                 width={64}
                 height={64}
@@ -24,15 +24,15 @@ const ProfileCard = () => {
             <div>
               <h2 className="text-2xl font-bold">Pedro Potz</h2>
               <p className="text-zinc-600 dark:text-zinc-300">
-               Advogado - Atuando globalmente. 
+               Advogado | Tecnologia Aplicada ao Direito
               </p>
             </div>
           </div>
           <p className="mt-4 text-lg">
-            Mindful Coding; Mindful Living.
+            Automação Jurídica e IA aplicada ao Direito
           </p>
           <p className="mt-2 text-zinc-600 dark:text-zinc-300">
-            Tenho atuado na interseção entre Direito e Tecnologia, desenvolvendo soluções práticas com IA e automações para advogados e estudantes em busca de produtividade real .
+            Soluções práticas com Python e IA para advogados, estudantes e escritórios jurídicos.
           </p>
         </CardContent>
       </Card>
