@@ -10,6 +10,7 @@ const Projects = dynamic(() => import("@components/FeaturedProjects"));
 const LegalDashboardCard = dynamic(() => import("@components/LegalDashboardCard"));
 const ProcessSearchCard = dynamic(() => import("@components/ProcessSearchCard"));
 const ConsultancyContactCard = dynamic(() => import("@components/ConsultancyContactCard"));
+const FundsTrackerCard = dynamic(() => import("@components/FundsTrackerCard"));
 const CommunicatorCard2 = dynamic(() => import("@components/CommunicatorCard2"));
 const ProfileCard = dynamic(() => import("@components/ProfileCard"));
 const ContactCard = dynamic(() => import("@components/ContactCard"));
@@ -29,6 +30,7 @@ const HomePage = () => {
 
       <div className="space-y-6 ">
         <LegalDashboardCard />
+        <FundsTrackerCard />
         <ProcessSearchCard />
         <ConsultancyContactCard />
         <CommunicatorCard2/>
