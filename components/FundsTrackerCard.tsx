@@ -36,7 +36,7 @@ export default function FundsTrackerCard() {
 
       <div className="space-y-3">
         <a
-          href="#"
+          href="https://meu-rastreador-fundos.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full bg-white text-emerald-700 font-bold py-4 px-6 rounded-lg hover:bg-emerald-50 transition text-center shadow-lg"
